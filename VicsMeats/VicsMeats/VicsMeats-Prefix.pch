@@ -1,0 +1,53 @@
+//
+// Prefix header for all source files of the 'VicsMeats' target in the 'VicsMeats' project
+//
+
+#import <Availability.h>
+#import "Define.h"
+//#import "DBDefine.h"
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "AppDelegate.h"
+    #import "Util.h"
+    #import "GlobalObjects.h"
+#endif
+
+// APPDELEGATE
+#define mainAppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
+
+#define IMAGESPATH [NSHomeDirectory() stringByAppendingString:@"/Documents/"]
+
+#define HOMEDIRECTORY [[NSBundle mainBundle] resourcePath]
+
+#define DOCUMENTDIRECTORY [NSHomeDirectory() stringByAppendingString:@"/Documents/"]
+
+#define LIBRARYCACHESDIRECTORY [NSHomeDirectory() stringByAppendingString:@"/Library/Caches/"]
+
+#define ISIPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+#define IS_WIDESCREEN ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
+#define IS_IPHONE_5 ( ISIPHONE && IS_WIDESCREEN )
+
+#define SCREEN_HEIGHT   [[UIScreen mainScreen] bounds].size.height
+
+
+//Check ios version of device
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
