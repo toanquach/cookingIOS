@@ -36,6 +36,13 @@
 		6A0BD098168C5A3F006763A8 /* btn-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0BD091168C5A3F006763A8 /* btn-next.png */; };
 		6A0BD099168C5A3F006763A8 /* btn-up-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0BD092168C5A3F006763A8 /* btn-up-1.png */; };
 		6A0BD09A168C5A3F006763A8 /* btn-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A0BD093168C5A3F006763A8 /* btn-up.png */; };
+		6A6DADDB169568960054C760 /* CookThicknessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A6DADDA169568960054C760 /* CookThicknessView.m */; };
+		6A6DADDE169568AC0054C760 /* CookThicknessView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DADDD169568AC0054C760 /* CookThicknessView.xib */; };
+		6A6DADE0169569DD0054C760 /* line-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DADDF169569DD0054C760 /* line-01.png */; };
+		6A6DADE9169582FC0054C760 /* 0.5cm-b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DADE5169582FC0054C760 /* 0.5cm-b.png */; };
+		6A6DADEA169582FC0054C760 /* 1.5cm-b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DADE6169582FC0054C760 /* 1.5cm-b.png */; };
+		6A6DADEB169582FC0054C760 /* 2.5cm-b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DADE7169582FC0054C760 /* 2.5cm-b.png */; };
+		6A6DADEC169582FC0054C760 /* 3.5cm-b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A6DADE8169582FC0054C760 /* 3.5cm-b.png */; };
 		6A7611A3168BEE0700FBAE9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7611A2168BEE0700FBAE9D /* UIKit.framework */; };
 		6A7611A5168BEE0700FBAE9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7611A4168BEE0700FBAE9D /* Foundation.framework */; };
 		6A7611A7168BEE0700FBAE9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7611A6168BEE0700FBAE9D /* CoreGraphics.framework */; };
@@ -145,6 +152,14 @@
 		6A0BD091168C5A3F006763A8 /* btn-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-next.png"; sourceTree = "<group>"; };
 		6A0BD092168C5A3F006763A8 /* btn-up-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-up-1.png"; sourceTree = "<group>"; };
 		6A0BD093168C5A3F006763A8 /* btn-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-up.png"; sourceTree = "<group>"; };
+		6A6DADD9169568960054C760 /* CookThicknessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CookThicknessView.h; sourceTree = "<group>"; };
+		6A6DADDA169568960054C760 /* CookThicknessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CookThicknessView.m; sourceTree = "<group>"; };
+		6A6DADDD169568AC0054C760 /* CookThicknessView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CookThicknessView.xib; sourceTree = "<group>"; };
+		6A6DADDF169569DD0054C760 /* line-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line-01.png"; sourceTree = "<group>"; };
+		6A6DADE5169582FC0054C760 /* 0.5cm-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0.5cm-b.png"; sourceTree = "<group>"; };
+		6A6DADE6169582FC0054C760 /* 1.5cm-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1.5cm-b.png"; sourceTree = "<group>"; };
+		6A6DADE7169582FC0054C760 /* 2.5cm-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2.5cm-b.png"; sourceTree = "<group>"; };
+		6A6DADE8169582FC0054C760 /* 3.5cm-b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3.5cm-b.png"; sourceTree = "<group>"; };
 		6A76119E168BEE0700FBAE9D /* VicsMeats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VicsMeats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7611A2168BEE0700FBAE9D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A7611A4168BEE0700FBAE9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -391,6 +406,9 @@
 				6AD65A2E16941EFD002A915E /* SlideMenuViewCell.h */,
 				6AD65A2F16941EFD002A915E /* SlideMenuViewCell.m */,
 				6AD65A3116941F11002A915E /* SlideMenuViewCell.xib */,
+				6A6DADD9169568960054C760 /* CookThicknessView.h */,
+				6A6DADDA169568960054C760 /* CookThicknessView.m */,
+				6A6DADDD169568AC0054C760 /* CookThicknessView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -531,14 +549,19 @@
 		6AD65A4D169447C9002A915E /* CookThickness */ = {
 			isa = PBXGroup;
 			children = (
-				6AD65A6216944863002A915E /* icon_cook_thickness.png */,
+				6A6DADE5169582FC0054C760 /* 0.5cm-b.png */,
 				6AD65A4E169447E5002A915E /* 1cm-b.png */,
-				6AD65A4F169447E5002A915E /* 1cm.png */,
+				6A6DADE6169582FC0054C760 /* 1.5cm-b.png */,
 				6AD65A50169447E5002A915E /* 2cm-b.png */,
-				6AD65A51169447E5002A915E /* 2cm.png */,
+				6A6DADE7169582FC0054C760 /* 2.5cm-b.png */,
 				6AD65A52169447E5002A915E /* 3cm-b.png */,
-				6AD65A53169447E5002A915E /* 3cm.png */,
+				6A6DADE8169582FC0054C760 /* 3.5cm-b.png */,
 				6AD65A54169447E5002A915E /* 4cm-b.png */,
+				6A6DADDF169569DD0054C760 /* line-01.png */,
+				6AD65A6216944863002A915E /* icon_cook_thickness.png */,
+				6AD65A4F169447E5002A915E /* 1cm.png */,
+				6AD65A51169447E5002A915E /* 2cm.png */,
+				6AD65A53169447E5002A915E /* 3cm.png */,
 				6AD65A55169447E5002A915E /* 4cm.png */,
 				6AD65A56169447E5002A915E /* icon-03.png */,
 				6AD65A57169447E5002A915E /* icon-ruller-1.png */,
@@ -677,6 +700,12 @@
 				6AD65A60169447E5002A915E /* icon-03.png in Resources */,
 				6AD65A61169447E5002A915E /* icon-ruller-1.png in Resources */,
 				6AD65A6316944863002A915E /* icon_cook_thickness.png in Resources */,
+				6A6DADDE169568AC0054C760 /* CookThicknessView.xib in Resources */,
+				6A6DADE0169569DD0054C760 /* line-01.png in Resources */,
+				6A6DADE9169582FC0054C760 /* 0.5cm-b.png in Resources */,
+				6A6DADEA169582FC0054C760 /* 1.5cm-b.png in Resources */,
+				6A6DADEB169582FC0054C760 /* 2.5cm-b.png in Resources */,
+				6A6DADEC169582FC0054C760 /* 3.5cm-b.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -706,6 +735,7 @@
 				6AD65A171693F0C1002A915E /* SlideMenuViewController.m in Sources */,
 				6AD65A25169412CF002A915E /* SlideMenuHeaderView.m in Sources */,
 				6AD65A3016941EFE002A915E /* SlideMenuViewCell.m in Sources */,
+				6A6DADDB169568960054C760 /* CookThicknessView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

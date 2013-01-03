@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CookThicknessView.h"
 
 @interface CookThicknessViewController : UIViewController
 {
     IBOutlet UIImageView *backgroundImageView;
-    
+    __weak IBOutlet CookThicknessView *cookThicknessView;
+    IBOutlet UIButton *nextButton;
 }
 
 - (void)setupView;

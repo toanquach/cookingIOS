@@ -50,6 +50,12 @@
         frame.size.height = SCREEN_HEIGHT;
         backgroundImageView.frame = frame;
     }
+    
+    [[NSBundle mainBundle] loadNibNamed:@"CookThicknessView" owner:self options:nil];
+    [cookThicknessView setupView];
+    cookThicknessView.frame = CGRectMake(0, 460 - 305, 320, 305);
+    [self.view addSubview:cookThicknessView];
+    [self.view bringSubviewToFront:nextButton];
 }
 
 #pragma mark - Button Event
