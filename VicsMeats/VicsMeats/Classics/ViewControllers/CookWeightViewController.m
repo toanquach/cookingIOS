@@ -7,6 +7,7 @@
 //
 
 #import "CookWeightViewController.h"
+#import "CookItObject.h"
 
 @interface CookWeightViewController ()
 
@@ -101,6 +102,13 @@
         value = 900;
     }
     gramLabel.text = [NSString stringWithFormat:@"%d",value];
+}
+
+- (IBAction)nextButtonTouchUp:(id)sender
+{
+    CookItObject *cookit = [GlobalObjects sharedInstance].cookitObj;
+    cookit.cookWeightKg = [kgLabel.text intValue];
+    cookit.cookWeightGram = [gramLabel.text intValue];
 }
 
 @end

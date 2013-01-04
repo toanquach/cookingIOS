@@ -10,7 +10,6 @@
 #define VicsMeats_Define_h
 
 #define kAppFont_Pacifico               @"Pacifico"
-#define kAppFont_FranchiseBold          @"franchisebold"
 #define kAppFont_Franchise_Bold         @"Franchise-Bold"
 
 // SLIDE MENU

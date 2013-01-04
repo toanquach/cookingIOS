@@ -39,7 +39,12 @@
     [self setThickNessImageView:@"1cm-b.png"];
 }
 
-- (IBAction)button1CMTouchUp:(id)sender
+- (float)getThicknessNumber
+{
+    return thicknessNumber;
+}
+
+-(IBAction)button1CMTouchUp:(id)sender
 {
     [UIView beginAnimations:@"Move Slider" context:nil];
     [UIView setAnimationDuration:0.5];

@@ -7,10 +7,12 @@
 //
 
 #import "GlobalObjects.h"
+#import "CookItObject.h"
 
 @implementation GlobalObjects
 
 @synthesize userDefaults;
+@synthesize cookitObj;
 
 + (GlobalObjects *)sharedInstance
 {
@@ -22,6 +24,7 @@
     {
         myInstance = [[[self class] alloc]init];
         myInstance.userDefaults = [NSUserDefaults standardUserDefaults];
+        myInstance.cookitObj = nil;
     }
     return myInstance;
 }

@@ -292,6 +292,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextButtonTouchUp:" destination="V2d-Wd-jq6" eventType="touchUpInside" id="4Hc-FS-cae"/>
                                     <segue destination="AqY-Wq-axy" kind="push" id="ePs-aW-NnP"/>
                                 </connections>
                             </button>
@@ -425,6 +426,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextButtonTouchUp:" destination="AqY-Wq-axy" eventType="touchUpInside" id="bwk-Bk-F0d"/>
                                     <segue destination="qO6-aV-Z0P" kind="push" id="Jwf-if-OfE"/>
                                 </connections>
                             </button>
@@ -598,20 +600,24 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2.3.4 Cook (doneness).jpg" id="F4v-SV-dLG">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg-home.png" id="r1e-pY-o61">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2.3.4 Cook (doneness).jpg" id="F4v-SV-dLG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="logo.png" id="MWT-TK-VqT">
+                                <rect key="frame" x="97" y="0.0" width="128" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="qTS-F1-gBb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="162" width="320" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cKs-bS-Eih">
-                                        <rect key="frame" x="110" y="414" width="101" height="46"/>
+                                        <rect key="frame" x="110" y="252" width="101" height="46"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" backgroundImage="btn-next.png">
@@ -657,6 +663,10 @@
                                     <action selector="backButtonTouchUp:" destination="qO6-aV-Z0P" eventType="touchUpInside" id="iQr-PK-UkC"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg_select_doneness.png" id="Bkn-h6-1qV">
+                                <rect key="frame" x="96" y="121" width="123" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -682,6 +692,7 @@
         <image name="bg-home.png" width="640" height="960"/>
         <image name="bg-kg.png" width="90" height="100"/>
         <image name="bg-nav.png" width="562" height="559"/>
+        <image name="bg_select_doneness.png" width="245" height="88"/>
         <image name="btn-down-1.png" width="65" height="45"/>
         <image name="btn-down.png" width="65" height="45"/>
         <image name="btn-next.png" width="202" height="92"/>
@@ -746,6 +757,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CookThicknessViewController.h"/>
             <relationships>
                 <relationship kind="action" name="backButtonTouchUp:"/>
+                <relationship kind="action" name="nextButtonTouchUp:"/>
                 <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="cookThicknessView" candidateClass="CookThicknessView"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
@@ -768,6 +780,7 @@
                 <relationship kind="action" name="gramUpButtonTouchUp:"/>
                 <relationship kind="action" name="kgDownButtonTouchUp:"/>
                 <relationship kind="action" name="kgUpButtonTouchUp:"/>
+                <relationship kind="action" name="nextButtonTouchUp:"/>
                 <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="gramLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="kgLabel" candidateClass="UILabel"/>
@@ -803,6 +816,11 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SlideMenuViewCell.h"/>
             <relationships>
                 <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="numberLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="numberView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="percentLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="percentView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="settingIconImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>

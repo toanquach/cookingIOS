@@ -84,6 +84,7 @@
     searchBgImageView.frame = CGRectMake(0, 0, 320, 48);
     searchBgImageView.contentMode = UIViewContentModeScaleToFill;
     [searchBgView addSubview:searchBgImageView];
+    
     // Add Search Text Field
     searchTextField = [[UITextField alloc]initWithFrame:CGRectMake(51, 9, 203, 30)];
     searchTextField.borderStyle = UITextBorderStyleNone;
@@ -183,15 +184,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *controllers = self.navigationController.viewControllers;
     if (indexPath.section == 1 && indexPath.row == 1)
     {
+        NSArray *controllers = self.navigationController.viewControllers;
         CookMethodViewController *viewController = [mainAppDelegate.storyBoard instantiateViewControllerWithIdentifier:@"cookMethodController"];
         controllers = [NSArray arrayWithObjects:[mainAppDelegate.navigationController.viewControllers objectAtIndex:0],viewController, nil];
+        
+        self.sideMenu.navigationController.viewControllers = controllers;
+        [self.sideMenu setMenuState:MFSideMenuStateHidden];
     }
-    
-    self.sideMenu.navigationController.viewControllers = controllers;
-    [self.sideMenu setMenuState:MFSideMenuStateHidden];
 }
 
 @end

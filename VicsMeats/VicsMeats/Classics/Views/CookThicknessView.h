@@ -22,6 +22,7 @@
 - (IBAction)button2CMTouchUp:(id)sender;
 - (IBAction)button3CMTouchUp:(id)sender;
 - (IBAction)button4CMTouchUp:(id)sender;
+- (float)getThicknessNumber;
 
 - (void)setThickNessImageView:(NSString *)imageName;
 - (void)updateThicknessNumber:(CGPoint) locationPoint andType:(BOOL)flag;

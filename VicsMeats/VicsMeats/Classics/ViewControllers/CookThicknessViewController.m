@@ -7,6 +7,7 @@
 //
 
 #import "CookThicknessViewController.h"
+#import "CookItObject.h"
 
 @interface CookThicknessViewController ()
 
@@ -28,6 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     [self setupView];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,6 +66,12 @@
 - (IBAction)backButtonTouchUp:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)nextButtonTouchUp:(id)sender
+{
+    CookItObject *cookit = [GlobalObjects sharedInstance].cookitObj;
+    cookit.cookThicknessCm = [cookThicknessView getThicknessNumber];
 }
 
 @end

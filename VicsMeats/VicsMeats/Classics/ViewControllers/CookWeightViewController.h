@@ -23,4 +23,5 @@
 - (IBAction)gramUpButtonTouchUp:(id)sender;
 - (IBAction)kgDownButtonTouchUp:(id)sender;
 - (IBAction)gramDownButtonTouchUp:(id)sender;
+- (IBAction)nextButtonTouchUp:(id)sender;
 @end

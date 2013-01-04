@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 
+#import "CookItObject.h"
+
 @interface HomeViewController ()
 
 @end
@@ -77,6 +79,9 @@
 - (IBAction)cookitButtonTouchUp:(id)sender
 {
     menuBgImageView.image = [UIImage imageNamed:@"bg-nav.png"];
+    
+    CookItObject *cookit = [[CookItObject alloc]init];
+    [[GlobalObjects sharedInstance] setCookitObj:cookit];
 }
 
 - (IBAction)meatButtonTouchDown:(id)sender

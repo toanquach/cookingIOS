@@ -13,9 +13,9 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import "AppDelegate.h"
     #import "Util.h"
     #import "GlobalObjects.h"
+    #import "AppDelegate.h"
 #endif
 
 // APPDELEGATE

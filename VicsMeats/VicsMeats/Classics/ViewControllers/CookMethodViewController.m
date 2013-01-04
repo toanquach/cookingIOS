@@ -95,7 +95,7 @@
         cookMethodViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     
-    [cookMethodViewCell setupView:[listMethod objectAtIndex:indexPath.row]];
+    [cookMethodViewCell setupView:[listMethod objectAtIndex:indexPath.row] andIndexPath:indexPath];
     
     return cookMethodViewCell;
 }

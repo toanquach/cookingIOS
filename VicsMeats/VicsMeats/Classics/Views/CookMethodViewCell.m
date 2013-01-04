@@ -10,6 +10,8 @@
 
 #import "CookWeightViewController.h"
 
+#import "CookItObject.h"
+
 @implementation CookMethodViewCell
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -30,9 +32,10 @@
 
 #pragma mark - set up view
 
-- (void)setupView:(NSString *)name
+- (void)setupView:(NSString *)name andIndexPath:(NSIndexPath *)indexPath
 {
     methodImageView.image = [UIImage imageNamed:name];
+    mIndexPath = indexPath;
 }
 
 #pragma mark - Button event
@@ -50,6 +53,10 @@
 - (IBAction)mainButtonTouchUp:(id)sender
 {
     [self performSelector:@selector(hiddenBorderView) withObject:nil afterDelay:0.5];
+    
+    CookItObject *cookit = [GlobalObjects sharedInstance].cookitObj;
+    cookit.cookMethodIndex = mIndexPath.row;
+    
     CookWeightViewController *controller = [mainAppDelegate.storyBoard instantiateViewControllerWithIdentifier:@"cookWeightController"];
     [mainAppDelegate.navigationController pushViewController:controller animated:YES];
 }

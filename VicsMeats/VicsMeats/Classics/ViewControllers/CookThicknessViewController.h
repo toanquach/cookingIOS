@@ -19,4 +19,5 @@
 - (void)setupView;
 
 - (IBAction)backButtonTouchUp:(id)sender;
+- (IBAction)nextButtonTouchUp:(id)sender;
 @end

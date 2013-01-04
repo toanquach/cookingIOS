@@ -27,7 +27,6 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Pacifico.otf</string>
-		<string>franchisebold.otf</string>
 		<string>Franchise-Bold.ttf</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>

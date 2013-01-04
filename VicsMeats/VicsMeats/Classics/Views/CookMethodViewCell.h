@@ -14,9 +14,10 @@
 {
     IBOutlet UIImageView *methodImageView;    
     __weak IBOutlet LBorderView *borderView;
+    NSIndexPath *mIndexPath;
 }
 
-- (void)setupView:(NSString *)name;
+- (void)setupView:(NSString *)name andIndexPath:(NSIndexPath *)indexPath;
 
 - (IBAction)mainButtonTouchDown:(id)sender;
 - (IBAction)mainButtonTouchUp:(id)sender;
