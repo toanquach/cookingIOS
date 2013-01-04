@@ -53,6 +53,19 @@
 		6A2CB158169698040025C1FE /* text-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB14C169698040025C1FE /* text-10.png */; };
 		6A2CB159169698040025C1FE /* text-11-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB14D169698040025C1FE /* text-11-hover.png */; };
 		6A2CB15A169698040025C1FE /* text-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB14E169698040025C1FE /* text-11.png */; };
+		6A2CB1601696D4160025C1FE /* bg-03.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB15C1696D4160025C1FE /* bg-03.png */; };
+		6A2CB1611696D4160025C1FE /* icon-done.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB15D1696D4160025C1FE /* icon-done.png */; };
+		6A2CB1621696D4160025C1FE /* icon-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB15E1696D4160025C1FE /* icon-start.png */; };
+		6A2CB1631696D4160025C1FE /* line-02.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB15F1696D4160025C1FE /* line-02.png */; };
+		6A2CB1651696D42C0025C1FE /* btn-edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1641696D42C0025C1FE /* btn-edit.png */; };
+		6A2CB1671696D5CB0025C1FE /* cooktimer-top-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1661696D5CB0025C1FE /* cooktimer-top-bg.png */; };
+		6A2CB16C1696D76B0025C1FE /* btn-ready.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1681696D76B0025C1FE /* btn-ready.png */; };
+		6A2CB16D1696D76B0025C1FE /* btn-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1691696D76B0025C1FE /* btn-start.png */; };
+		6A2CB16E1696D76B0025C1FE /* icon-removeandrest.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB16A1696D76B0025C1FE /* icon-removeandrest.png */; };
+		6A2CB16F1696D76B0025C1FE /* icon-turn-steak.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB16B1696D76B0025C1FE /* icon-turn-steak.png */; };
+		6A2CB1711696E4C90025C1FE /* UniversLTStd-LightUltraCn.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1701696E4C90025C1FE /* UniversLTStd-LightUltraCn.otf */; };
+		6A2CB1731696EEFE0025C1FE /* icon_do_c.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1721696EEFE0025C1FE /* icon_do_c.png */; };
+		6A2CB1751696F1260025C1FE /* bg-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A2CB1741696F1260025C1FE /* bg-04.png */; };
 		6A506EA91696804C00A2D8C5 /* bg-number.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A506EA61696804B00A2D8C5 /* bg-number.png */; };
 		6A506EAA1696804C00A2D8C5 /* bg-percent.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A506EA71696804C00A2D8C5 /* bg-percent.png */; };
 		6A506EAB1696804C00A2D8C5 /* icon-08.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A506EA81696804C00A2D8C5 /* icon-08.png */; };
@@ -190,6 +203,19 @@
 		6A2CB14C169698040025C1FE /* text-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-10.png"; sourceTree = "<group>"; };
 		6A2CB14D169698040025C1FE /* text-11-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-11-hover.png"; sourceTree = "<group>"; };
 		6A2CB14E169698040025C1FE /* text-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-11.png"; sourceTree = "<group>"; };
+		6A2CB15C1696D4160025C1FE /* bg-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-03.png"; sourceTree = "<group>"; };
+		6A2CB15D1696D4160025C1FE /* icon-done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-done.png"; sourceTree = "<group>"; };
+		6A2CB15E1696D4160025C1FE /* icon-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-start.png"; sourceTree = "<group>"; };
+		6A2CB15F1696D4160025C1FE /* line-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line-02.png"; sourceTree = "<group>"; };
+		6A2CB1641696D42C0025C1FE /* btn-edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-edit.png"; sourceTree = "<group>"; };
+		6A2CB1661696D5CB0025C1FE /* cooktimer-top-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cooktimer-top-bg.png"; sourceTree = "<group>"; };
+		6A2CB1681696D76B0025C1FE /* btn-ready.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-ready.png"; sourceTree = "<group>"; };
+		6A2CB1691696D76B0025C1FE /* btn-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-start.png"; sourceTree = "<group>"; };
+		6A2CB16A1696D76B0025C1FE /* icon-removeandrest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-removeandrest.png"; sourceTree = "<group>"; };
+		6A2CB16B1696D76B0025C1FE /* icon-turn-steak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-turn-steak.png"; sourceTree = "<group>"; };
+		6A2CB1701696E4C90025C1FE /* UniversLTStd-LightUltraCn.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UniversLTStd-LightUltraCn.otf"; sourceTree = "<group>"; };
+		6A2CB1721696EEFE0025C1FE /* icon_do_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_do_c.png; sourceTree = "<group>"; };
+		6A2CB1741696F1260025C1FE /* bg-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-04.png"; sourceTree = "<group>"; };
 		6A506EA61696804B00A2D8C5 /* bg-number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-number.png"; sourceTree = "<group>"; };
 		6A506EA71696804C00A2D8C5 /* bg-percent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-percent.png"; sourceTree = "<group>"; };
 		6A506EA81696804C00A2D8C5 /* icon-08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-08.png"; sourceTree = "<group>"; };
@@ -368,6 +394,25 @@
 			name = CookDoneness;
 			sourceTree = "<group>";
 		};
+		6A2CB15B1696D4050025C1FE /* CookTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6A2CB1741696F1260025C1FE /* bg-04.png */,
+				6A2CB1721696EEFE0025C1FE /* icon_do_c.png */,
+				6A2CB1681696D76B0025C1FE /* btn-ready.png */,
+				6A2CB1691696D76B0025C1FE /* btn-start.png */,
+				6A2CB16A1696D76B0025C1FE /* icon-removeandrest.png */,
+				6A2CB16B1696D76B0025C1FE /* icon-turn-steak.png */,
+				6A2CB1661696D5CB0025C1FE /* cooktimer-top-bg.png */,
+				6A2CB1641696D42C0025C1FE /* btn-edit.png */,
+				6A2CB15C1696D4160025C1FE /* bg-03.png */,
+				6A2CB15D1696D4160025C1FE /* icon-done.png */,
+				6A2CB15E1696D4160025C1FE /* icon-start.png */,
+				6A2CB15F1696D4160025C1FE /* line-02.png */,
+			);
+			name = CookTimer;
+			sourceTree = "<group>";
+		};
 		6A506EB316968C6A00A2D8C5 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,6 +551,7 @@
 		6A7611CD168BEE4300FBAE9D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				6A2CB15B1696D4050025C1FE /* CookTimer */,
 				6A2CB134169695620025C1FE /* CookDoneness */,
 				6AD65A4D169447C9002A915E /* CookThickness */,
 				6AD65A1816940CE3002A915E /* SlideMenu */,
@@ -565,6 +611,7 @@
 		6AB2F9CB168BFCAB00AF3F72 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				6A2CB1701696E4C90025C1FE /* UniversLTStd-LightUltraCn.otf */,
 				6AD65A411694298F002A915E /* Franchise-Bold.ttf */,
 				6A0BD04B168C3410006763A8 /* Pacifico.otf */,
 			);
@@ -804,6 +851,19 @@
 				6A2CB158169698040025C1FE /* text-10.png in Resources */,
 				6A2CB159169698040025C1FE /* text-11-hover.png in Resources */,
 				6A2CB15A169698040025C1FE /* text-11.png in Resources */,
+				6A2CB1601696D4160025C1FE /* bg-03.png in Resources */,
+				6A2CB1611696D4160025C1FE /* icon-done.png in Resources */,
+				6A2CB1621696D4160025C1FE /* icon-start.png in Resources */,
+				6A2CB1631696D4160025C1FE /* line-02.png in Resources */,
+				6A2CB1651696D42C0025C1FE /* btn-edit.png in Resources */,
+				6A2CB1671696D5CB0025C1FE /* cooktimer-top-bg.png in Resources */,
+				6A2CB16C1696D76B0025C1FE /* btn-ready.png in Resources */,
+				6A2CB16D1696D76B0025C1FE /* btn-start.png in Resources */,
+				6A2CB16E1696D76B0025C1FE /* icon-removeandrest.png in Resources */,
+				6A2CB16F1696D76B0025C1FE /* icon-turn-steak.png in Resources */,
+				6A2CB1711696E4C90025C1FE /* UniversLTStd-LightUltraCn.otf in Resources */,
+				6A2CB1731696EEFE0025C1FE /* icon_do_c.png in Resources */,
+				6A2CB1751696F1260025C1FE /* bg-04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

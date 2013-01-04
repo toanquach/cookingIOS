@@ -9,6 +9,7 @@
 #import "CookMethodViewCell.h"
 
 #import "CookWeightViewController.h"
+#import "CookThicknessViewController.h"
 
 #import "CookItObject.h"
 
@@ -52,13 +53,21 @@
 
 - (IBAction)mainButtonTouchUp:(id)sender
 {
-    [self performSelector:@selector(hiddenBorderView) withObject:nil afterDelay:0.5];
+    [self performSelector:@selector(hiddenBorderView) withObject:nil afterDelay:0.2];
     
     CookItObject *cookit = [GlobalObjects sharedInstance].cookitObj;
     cookit.cookMethodIndex = mIndexPath.row;
-    
-    CookWeightViewController *controller = [mainAppDelegate.storyBoard instantiateViewControllerWithIdentifier:@"cookWeightController"];
-    [mainAppDelegate.navigationController pushViewController:controller animated:YES];
+    if (mIndexPath.row == 0) // Grill
+    {
+        CookThicknessViewController *controller = [mainAppDelegate.storyBoard instantiateViewControllerWithIdentifier:@"cookThicknessController"];
+        [mainAppDelegate.navigationController pushViewController:controller animated:YES];
+    }
+    else if(mIndexPath.row == 2)
+    {
+        CookWeightViewController *controller = [mainAppDelegate.storyBoard instantiateViewControllerWithIdentifier:@"cookWeightController"];
+        [mainAppDelegate.navigationController pushViewController:controller animated:YES];
+    }
+
 }
 
 - (IBAction)mainButtonDragOutSide:(id)sender

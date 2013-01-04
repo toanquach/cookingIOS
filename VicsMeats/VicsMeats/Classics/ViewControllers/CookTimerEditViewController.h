@@ -10,4 +10,5 @@
 
 @interface CookTimerEditViewController : UIViewController
 
+- (IBAction)backButtonTouchUp:(id)sender;
 @end

@@ -35,4 +35,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)backButtonTouchUp:(id)sender
+{
+    [mainAppDelegate.navigationController popViewControllerAnimated:YES];
+}
 @end

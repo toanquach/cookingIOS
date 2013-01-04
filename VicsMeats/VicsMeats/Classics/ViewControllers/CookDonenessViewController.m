@@ -40,7 +40,14 @@
 
 - (void)setupView
 {
-    mainScrollView.contentSize = CGSizeMake(320, 480);
+    [[NSBundle mainBundle] loadNibNamed:@"CookDonenessView" owner:self options:nil];
+    [cookDonenessView setupView];
+    cookDonenessView.frame = CGRectMake(0, 3, 320, 250);
+    cookDonenessView.parentScrollView = mainScrollView;
+    [mainScrollView addSubview:cookDonenessView];
+    [mainScrollView bringSubviewToFront:nextButton];
+    
+    mainScrollView.contentSize = CGSizeMake(320, 298 + 20);
     
     if (IS_IPHONE_5)
     {
@@ -51,6 +58,10 @@
         CGRect frame = backgroundImageView.frame;
         frame.size.height = SCREEN_HEIGHT;
         backgroundImageView.frame = frame;
+        
+        frame = mainScrollView.frame;
+        frame.size.height = 298 + 88 + 20;
+        mainScrollView.frame = frame;
     }
 }
 

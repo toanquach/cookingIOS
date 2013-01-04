@@ -17,7 +17,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAC-bl-Xxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="-92"/>
+            <point key="canvasLocation" x="-351" y="-512"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="aEi-5P-rg8">
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEd-QL-iWS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="-92"/>
+            <point key="canvasLocation" x="101" y="-512"/>
         </scene>
         <!--Cook Method View Controller-->
         <scene sceneID="Hwu-MV-ub2">
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5R-QC-Lly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="584" y="-92"/>
+            <point key="canvasLocation" x="600" y="-512"/>
         </scene>
         <!--Cook Weight View Controller-->
         <scene sceneID="XXv-yg-EGf">
@@ -293,7 +293,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonTouchUp:" destination="V2d-Wd-jq6" eventType="touchUpInside" id="4Hc-FS-cae"/>
-                                    <segue destination="AqY-Wq-axy" kind="push" id="ePs-aW-NnP"/>
+                                    <segue destination="qO6-aV-Z0P" kind="push" id="eqD-co-Y18"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="text-gram.png" id="7ex-gh-391">
@@ -476,7 +476,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0l-sC-gq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="-82"/>
+            <point key="canvasLocation" x="986" y="-738"/>
         </scene>
         <!--Slide Menu View Controller-->
         <scene sceneID="n4K-aJ-JQT">
@@ -505,7 +505,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itW-lv-Axg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="555"/>
+            <point key="canvasLocation" x="101" y="159"/>
         </scene>
         <!--Cook Timer Edit View Controller-->
         <scene sceneID="Ych-FF-wbv">
@@ -519,16 +519,63 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="logo.png" id="2pn-nf-xTc">
+                                <rect key="frame" x="97" y="0.0" width="128" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WLt-Nj-m2y" userLabel="Button Info">
+                                <rect key="frame" x="271" y="0.0" width="49" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="icon-question.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infosButtonTouchUp:" destination="CwO-oX-8zw" eventType="touchUpInside" id="o8q-dF-ObF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IDb-ng-xww" userLabel="Button Back">
+                                <rect key="frame" x="0.0" y="0.0" width="49" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="icon-back.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTouchUp:" destination="vad-f0-2DI" eventType="touchUpInside" id="6uY-9e-11D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="w3a-00-80U">
+                                <rect key="frame" x="86" y="411" width="146" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="btn-ready.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Uw6-6K-kub"/>
                     <connections>
                         <outlet property="view" destination="yR6-bX-mK3" id="YA2-kR-nYs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJj-WQ-Bfp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="636"/>
+            <point key="canvasLocation" x="1904" y="252"/>
         </scene>
         <!--Cook Timer View Controller-->
         <scene sceneID="1T6-gJ-r1h">
@@ -542,6 +589,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="cooktimer-top-bg.png" id="gIO-KC-id1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="273"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg-03.png" id="0tv-DE-Bvd">
+                                <rect key="frame" x="43" y="121" width="172" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2.3.5 Cook (timer) - Initial State.jpg" id="hlM-ku-KPi">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="828"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -550,6 +605,16 @@
                                 <rect key="frame" x="97" y="0.0" width="128" height="115"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vHi-dj-ogg">
+                                <rect key="frame" x="0.0" y="273" width="320" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bg-04.png" id="IgE-1J-MkE">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="555"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="n8h-Xv-8vI" userLabel="Button Info">
                                 <rect key="frame" x="271" y="0.0" width="49" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -580,17 +645,117 @@
                                     <action selector="slideMenuButtonTouchUp:" destination="aDE-R0-SgY" eventType="touchUpInside" id="r9x-9W-Jb5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ddm-G3-nKA">
+                                <rect key="frame" x="217" y="128" width="55" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="btn-edit.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vad-f0-2DI" kind="push" id="xZb-xe-YZ0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wmG-xj-lBN">
+                                <rect key="frame" x="44" y="250" width="227" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="btn-start.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fvb-QY-f9c">
+                                <rect key="frame" x="46" y="131" width="51" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Medium" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wcn-b5-h4h">
+                                <rect key="frame" x="100" y="131" width="63" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2.5CM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nsH-xd-b0W">
+                                <rect key="frame" x="157" y="128" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="line-02.png" id="PWf-1R-R6d">
+                                <rect key="frame" x="92" y="131" width="9" height="28"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="line-02.png" id="o4G-R6-elr">
+                                <rect key="frame" x="154" y="131" width="9" height="28"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="DqM-EF-8fe">
+                                <rect key="frame" x="0.0" y="160" width="320" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="06:56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mcD-Uy-DLx">
+                                        <rect key="frame" x="45" y="15" width="108" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="130" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JFb-cc-QT3">
+                                        <rect key="frame" x="171" y="11" width="116" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="COOKING TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xRz-SV-0ib">
+                                        <rect key="frame" x="55" y="64" width="85" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.63921568630000003" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="INTERNAL TEMP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gaK-bK-lod">
+                                        <rect key="frame" x="182" y="64" width="91" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.63921568630000003" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="icon_do_c.png" id="qPJ-9Y-RK5">
+                                        <rect key="frame" x="238" y="15" width="31" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jzi-l1-Ge4"/>
                     <connections>
+                        <outlet property="cookingTimeLabel" destination="xRz-SV-0ib" id="eWO-oj-QFN"/>
+                        <outlet property="cookingTimeValueLabel" destination="mcD-Uy-DLx" id="eYK-Du-ScY"/>
+                        <outlet property="donenessLabel" destination="Wcn-b5-h4h" id="e9R-jl-SuF"/>
+                        <outlet property="internalTempLabel" destination="gaK-bK-lod" id="KKC-Wp-6XI"/>
+                        <outlet property="internalTempTimeLabel" destination="JFb-cc-QT3" id="bA2-f8-pFU"/>
+                        <outlet property="line01ImageView" destination="PWf-1R-R6d" id="HvY-lg-dea"/>
+                        <outlet property="line02ImageView" destination="o4G-R6-elr" id="rPS-fG-bCq"/>
+                        <outlet property="mainScrollView" destination="vHi-dj-ogg" id="GdZ-U9-y6O"/>
+                        <outlet property="methodLabel" destination="Fvb-QY-f9c" id="wKm-oH-PbA"/>
+                        <outlet property="thicknessWeightLabel" destination="nsH-xd-b0W" id="ULo-Cy-lLE"/>
                         <outlet property="view" destination="IYd-pU-xMB" id="q5A-n3-w51"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SC5-Va-Bx2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="636"/>
+            <point key="canvasLocation" x="2188" y="-462"/>
         </scene>
         <!--Cook Doneness View Controller-->
         <scene sceneID="xXs-tk-Wxg">
@@ -604,7 +769,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2.3.4 Cook (doneness).jpg" id="F4v-SV-dLG">
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="2.3.4 Cook (doneness).jpg" id="F4v-SV-dLG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -674,12 +839,13 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="r1e-pY-o61" id="c4T-Ug-plg"/>
                         <outlet property="mainScrollView" destination="qTS-F1-gBb" id="SvB-pg-iON"/>
+                        <outlet property="nextButton" destination="cKs-bS-Eih" id="WfF-xP-pzI"/>
                         <outlet property="view" destination="zZc-hF-FKf" id="3oA-Fi-GHa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3p-Oi-Hxv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="636"/>
+            <point key="canvasLocation" x="1612" y="-462"/>
         </scene>
     </scenes>
     <resources>
@@ -688,6 +854,8 @@
         <image name="2.3.5 Cook (timer) - Initial State.jpg" width="640" height="1655"/>
         <image name="2.3.7 Cook (timer) - Edit.jpg" width="640" height="960"/>
         <image name="bg-01-1.png" width="324" height="87"/>
+        <image name="bg-03.png" width="343" height="91"/>
+        <image name="bg-04.png" width="640" height="1109"/>
         <image name="bg-gram.png" width="130" height="100"/>
         <image name="bg-home.png" width="640" height="960"/>
         <image name="bg-kg.png" width="90" height="100"/>
@@ -695,9 +863,13 @@
         <image name="bg_select_doneness.png" width="245" height="88"/>
         <image name="btn-down-1.png" width="65" height="45"/>
         <image name="btn-down.png" width="65" height="45"/>
+        <image name="btn-edit.png" width="109" height="72"/>
         <image name="btn-next.png" width="202" height="92"/>
+        <image name="btn-ready.png" width="292" height="91"/>
+        <image name="btn-start.png" width="453" height="98"/>
         <image name="btn-up-1.png" width="65" height="45"/>
         <image name="btn-up.png" width="65" height="45"/>
+        <image name="cooktimer-top-bg.png" width="640" height="546"/>
         <image name="cookweight_select_bg.png" width="244" height="86"/>
         <image name="home-ask-question.png" width="140" height="111"/>
         <image name="home-cook-it.png" width="179" height="113"/>
@@ -708,18 +880,41 @@
         <image name="icon-question.png" width="97" height="95"/>
         <image name="icon-slider.png" width="97" height="95"/>
         <image name="icon_cook_thickness.png" width="244" height="86"/>
+        <image name="icon_do_c.png" width="61" height="88"/>
+        <image name="line-02.png" width="17" height="55"/>
         <image name="logo-home.png" width="459" height="203"/>
         <image name="logo.png" width="255" height="230"/>
         <image name="text-gram.png" width="170" height="72"/>
         <image name="text-kg.png" width="63" height="72"/>
     </resources>
     <classes>
+        <class className="CookDonenessView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CookDonenessView.h"/>
+            <relationships>
+                <relationship kind="action" name="blueButtonTouchUp:"/>
+                <relationship kind="action" name="mediumButtonTouchUp:"/>
+                <relationship kind="action" name="mediumRareButtonTouchUp:"/>
+                <relationship kind="action" name="mediumWellButtonTouchUp:"/>
+                <relationship kind="action" name="rareButtonTouchUp:"/>
+                <relationship kind="action" name="wellDoneButtonTouchUp:"/>
+                <relationship kind="outlet" name="blueButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mediumButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mediumRareButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mediumWellButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rareButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="rullerImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="sliderImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="wellDoneButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="CookDonenessViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CookDonenessViewController.h"/>
             <relationships>
                 <relationship kind="action" name="backButtonTouchUp:"/>
                 <relationship kind="outlet" name="backgroundImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cookDonenessView" candidateClass="CookDonenessView"/>
                 <relationship kind="outlet" name="mainScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="CookMethodViewCell" superclassName="UITableViewCell">
@@ -765,11 +960,24 @@
         </class>
         <class className="CookTimerEditViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CookTimerEditViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="backButtonTouchUp:"/>
+            </relationships>
         </class>
         <class className="CookTimerViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CookTimerViewController.h"/>
             <relationships>
                 <relationship kind="action" name="slideMenuButtonTouchUp:"/>
+                <relationship kind="outlet" name="cookingTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cookingTimeValueLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="donenessLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="internalTempLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="internalTempTimeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="line01ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="line02ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="methodLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thicknessWeightLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="CookWeightViewController" superclassName="UIViewController">
@@ -838,4 +1046,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jwf-if-OfE"/>
+    </inferredMetricsTieBreakers>
 </document>

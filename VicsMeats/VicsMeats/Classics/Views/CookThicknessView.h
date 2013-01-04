@@ -26,5 +26,6 @@
 
 - (void)setThickNessImageView:(NSString *)imageName;
 - (void)updateThicknessNumber:(CGPoint) locationPoint andType:(BOOL)flag;
+- (void)sliderAnimationWithPoint:(CGPoint)point;
 
 @end

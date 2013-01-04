@@ -44,55 +44,40 @@
     return thicknessNumber;
 }
 
--(IBAction)button1CMTouchUp:(id)sender
+- (void)sliderAnimationWithPoint:(CGPoint)point
 {
     [UIView beginAnimations:@"Move Slider" context:nil];
     [UIView setAnimationDuration:0.5];
     [UIView setAnimationBeginsFromCurrentState:YES];
     
-    sliderImageView.center = CGPointMake(240, kSlider_MinY + 32*6);
+    sliderImageView.center = point;
     
     [UIView commitAnimations];
-    
+}
+
+#pragma mark - Button Event
+
+-(IBAction)button1CMTouchUp:(id)sender
+{
+    [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*6)];
     [self setThickNessImageView:@"1cm-b.png"];
 }
 
 - (IBAction)button2CMTouchUp:(id)sender
 {
-    [UIView beginAnimations:@"Move Slider" context:nil];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    
-    sliderImageView.center = CGPointMake(240, kSlider_MinY + 32*4);
-    
-    [UIView commitAnimations];
-    
+    [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*4)];
     [self setThickNessImageView:@"2cm-b.png"];
 }
 
 - (IBAction)button3CMTouchUp:(id)sender
 {
-    [UIView beginAnimations:@"Move Slider" context:nil];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    
-    sliderImageView.center = CGPointMake(240, kSlider_MinY + 32*2);
-    
-    [UIView commitAnimations];
-    
+    [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*2)];
     [self setThickNessImageView:@"3cm-b.png"];
 }
 
 - (IBAction)button4CMTouchUp:(id)sender
 {
-    [UIView beginAnimations:@"Move Slider" context:nil];
-    [UIView setAnimationDuration:0.5];
-    [UIView setAnimationBeginsFromCurrentState:YES];
-    
-    sliderImageView.center = CGPointMake(240, kSlider_MinY );
-    
-    [UIView commitAnimations];
-    
+    [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY)];
     [self setThickNessImageView:@"4cm-b.png"];
 }
 
@@ -101,8 +86,8 @@
     UIImage *image = [UIImage imageNamed:imageName];
     thicknessNumberImageView.image = image;
     CGRect rect = thicknessNumberImageView.frame;
-    rect.size.width   = image.size.width/2;
-    rect.size.height  = image.size.height/2;
+    rect.size.width   = (int)(image.size.width/2 + 0.5);
+    rect.size.height  = (int)(image.size.height/2 + 0.5);
     thicknessNumberImageView.frame = rect;
     thicknessNumberImageView.center = centerPoint;
 }
@@ -132,8 +117,6 @@
 {
     UITouch *touch = [touches anyObject];
     CGPoint locationPoint = [touch locationInView:self];
- 
-    NSLog(@"%@",NSStringFromCGPoint(locationPoint));
     
     if (isTouchInSlider)
     {
@@ -159,7 +142,35 @@
         {
             if (thicknessNumber == 0.5)
             {
-                sliderImageView.center = CGPointMake(240, kSlider_MinY + 32*7);
+               [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*7)];
+            }
+            else if(thicknessNumber == 1.0)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*6)];
+            }
+            else if(thicknessNumber == 1.5)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*5)];
+            }
+            else if(thicknessNumber == 2.0)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*4)];
+            }
+            else if(thicknessNumber == 2.5)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*3)];
+            }
+            else if(thicknessNumber == 3.0)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*2)];
+            }
+            else if(thicknessNumber == 3.5)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY + 32*1)];
+            }
+            else if(thicknessNumber == 4.0)
+            {
+                [self sliderAnimationWithPoint:CGPointMake(240, kSlider_MinY)];
             }
         }
     }
@@ -278,7 +289,6 @@
     }
     
     [UIView commitAnimations];
-    NSLog(@"%f",thicknessNumber);
     [self setThickNessImageView:imageName];
 }
 

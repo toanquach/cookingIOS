@@ -28,6 +28,7 @@
 	<array>
 		<string>Pacifico.otf</string>
 		<string>Franchise-Bold.ttf</string>
+		<string>UniversLTStd-LightUltraCn.otf</string>
 	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
